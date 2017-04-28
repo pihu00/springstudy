@@ -19,8 +19,9 @@ public class OrderManager {
 //
 //	@Inject
 //	@Named("hyundai")
-	@Autowired
-	@Qualifier("hyundai")
+//	@Autowired
+//	@Qualifier("hyundai")
+	@Resource(name="hyundai")
 	private CarMaker maker;
 	
 	// 자료형 > 아이디로 찾아서 주입

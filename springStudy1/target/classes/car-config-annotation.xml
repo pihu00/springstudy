@@ -13,6 +13,7 @@
 	@Controller
 	@Service
 	@Repository
+	@RestController, @ControllerAdivice .. < 스프링 4.0 추가됨.
  -->
 	<context:component-scan base-package="com.story.annotation" />
 
@@ -20,8 +21,8 @@
 
 <!-- 
 	컨테이너에 등록 된 빈들을 대상으로 DI처리를 한다.
-	@Autowired
-	@Resource
+	@Autowired	: 필드변수, 생성자, 메소드에서만 사용가능.
+	@Resource	: 생성자 빼고 전부 가능
 	@Inject
 	@Qualifier
 	@Named
